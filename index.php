@@ -31,7 +31,7 @@ sleep(1); ?>
 
 <body>
     <div id="filtres">
-        <span>Rechercher par : &nbsp;</span>
+        <span>Rechercher par catégorie : &nbsp;</span>
         <select name="fetchval" id="fetchval">
             <option value="" disabled="" selected="">Select filtre</option>
             <?php $categories = getCategories();
