@@ -31,7 +31,7 @@ sleep(1); ?>
 
 <body>
     <div id="filtres">
-        <span>Fetch results by &nbsp;</span>
+        <span>Rechercher par : &nbsp;</span>
         <select name="fetchval" id="fetchval">
             <option value="" disabled="" selected="">Select filtre</option>
             <?php $categories = getCategories();
@@ -40,7 +40,7 @@ sleep(1); ?>
                 <option value="<?php echo $categorie['idCategorie']; ?>"><?php echo $categorie['nomCategorie']; ?></option>
             <?php } ?>
         </select>
-        <select name="fetchval1" id="fetchval1">
+        <!-- <select name="fetchval1" id="fetchval1">
             <option value="" disabled="" selected="">Select filtre</option>
             <?php $sousCategories = getAllSousCategories();
             foreach ($sousCategories as $sousCategorie) {
@@ -57,7 +57,7 @@ sleep(1); ?>
                 <option value="<?php echo $taille['idTaille']; ?>">
                     <?php echo $taille['nomTaille']; ?></option>
             <?php } ?>
-        </select>
+        </select> -->
 
     </div>
     <div class="container">
