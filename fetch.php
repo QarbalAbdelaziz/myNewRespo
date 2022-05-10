@@ -14,6 +14,7 @@ if (isset($_POST['request2'])) {
     $query = $query."  idTaille=$request2";
 }
 // echo $query;
+echo "reqette masqué";
 $query_run = $cnx->query($query);
 $query_result = $query_run->fetchAll();
 $count = count($query_result);
